@@ -1,0 +1,22 @@
+button {
+    background-color: lawngreen; /* Green */
+    border: none;
+    color: white;
+    padding: 1em 2em;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    cursor: pointer;
+    &:hover{
+        background-color: lighten($color: lawngreen, $amount: 5);
+    }
+  }
+
+  .buttonContainer{
+      display: flex;
+      flex-flow: column;
+      width: 20vw;
+      margin-left: 3vw;
+      
+  }
