@@ -8,7 +8,7 @@ import './App.scss'
 
 function App() {
 
-const [text,setText] = useState("te1xt")
+const [text,setText] = useState("")
 
   return (
     <div className="appContainer">

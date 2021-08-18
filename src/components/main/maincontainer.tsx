@@ -2,6 +2,7 @@ import React from 'react'
 import { isThisTypeNode } from 'typescript';
 import { Home } from "./home";
 import { View } from "./view";
+import Insert  from "./insert";
 import { roomData,RoomType } from '../../data/room'
 type Props = {
     selected: string;
@@ -23,10 +24,11 @@ class MainContainer extends React.Component<Props, State>{
             this.DisplayComponent=  ((component:string) => {
                 if (component=== "Home")
                       return <Home/>
-                   else  if (component=== "View")
+                else  if (component=== "View")
                    return <View roomDetails={roomData}/>
-
-                   return undefined
+                else  if (component=== "Insert")
+                   return <Insert/>
+                return undefined
                })(this.props.selected);
        
         return (
